@@ -1,0 +1,26 @@
+[project]
+name = "bahn-delays"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "paulsimion16", email = "paul.simion.sorin@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.9",
+    "pandas>=2.3.3",
+    "psycopg[binary]>=3.3.6",
+    "pyarrow>=25.0.1",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.7.2",
+    "sqlalchemy>=2.0.55",
+]
+
+[project.scripts]
+bahn-delays = "bahn_delays:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
